@@ -7,14 +7,14 @@
 
 ##  TASK 1: Gestionarea prietenilor
 
-    Pentru implementarea primului task am folosit un graf pentru a putea
+Pentru implementarea primului task am folosit un graf pentru a putea
 manipula cat mai usor conexiunile dintre nodurile reprezentate de useri.
 Nodul unui user din graf are structura `user_node_t` si contine id-ul user-ului, 
 cat si username-ul (campurile principale care-l definesc pe utilizatorul 
 retelei). Graful are structura `graph_t` si este un graf reprezentat prin liste de
 adiacenta, 
 fiecare lista `friends_list_t` continand prietenii user-ului.
-    Pentru implementarea comenzilor posibile legate de gestionarea prietenilor,
+Pentru implementarea comenzilor posibile legate de gestionarea prietenilor,
 mi-am definit atat functii auxiliare, cat si functii principale care rezolva 
 cerinta. Ele sunt urmatoarele:
 
@@ -46,7 +46,7 @@ asociate.
 
 ##  TASK 2: Gestionarea postarilor si repostarilor
 
-    Avem o lista dublu inlantuita de arbori. Fiecare nod al listei `ll_node_t`
+Avem o lista dublu inlantuita de arbori. Fiecare nod al listei `ll_node_t`
 este radacina unui arbore generic. Nodul reprezinta postarea in sine si 
 proprietatile ei :
     *numarul de like-uri
@@ -57,10 +57,10 @@ proprietatile ei :
     *id-ul userului care a facut postarea
     *repostarile care vor deriva din ea ("copiii") (`g_node_t **repost`)
 
-    In lista dublu inlantuita se adauga si repostarile, avand aceeasi structura
- ca si postarile.
+In lista dublu inlantuita se adauga si repostarile, avand aceeasi structura
+ca si postarile.
 
-    Functiile necesare implementarii functionalitatii acestui task sunt 
+Functiile necesare implementarii functionalitatii acestui task sunt 
 urmatoarele:
 
 - create_node - creeaza un nod pentru un arbore generic;
@@ -98,15 +98,15 @@ dintr-un arbore;
 ##  TASK 3: Gestionarea feed-ului si a prietenilor apropiati
 
 
-    Implementarea ultimului task implica gestionarea si afisarea feed-ului 
+Implementarea ultimului task implica gestionarea si afisarea feed-ului 
 utilizatorilor intr-o retea sociala, identificarea prietenilor care au repostat 
 anumite postari, vizualizarea de profil si determinarea grupului de prieteni 
 cel mai apropiat.
-    Tocmai pentru a gestiona mai simplu acest task, am adaugat la task-ul 
+Tocmai pentru a gestiona mai simplu acest task, am adaugat la task-ul 
 anterior , atat postarile pe lista dublu inlantuita, cat si repostarile (pentru 
 a rezuma functiile de afisare la o singura parcurgere liniara a listei).
 
-    Functiile implementate in cadrul task-ului sunt urmatatoarele:
+Functiile implementate in cadrul task-ului sunt urmatatoarele:
 
 - show_feed : Afiseaza ultimele nr_posts postari originale ale prietenilor si 
 ale utilizatorului curent, ignorand repostarile. Parcurge lista dublu inlantuita 
