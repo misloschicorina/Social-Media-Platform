@@ -3,7 +3,9 @@
 **Misloschi Alexandra Corina**  
 **314 CA, 2023-2024**
 
-    TASK 1:
+---
+
+##  TASK 1: Gestionarea prietenilor
 
     Pentru implementarea primului task am folosit un graf pentru a putea
 manipula cat mai usor conexiunile dintre nodurile reprezentate de useri.
@@ -42,7 +44,7 @@ unui utilizator;
 - free_graph - elibereaza complet memoria alocata grafului si a elementelor 
 asociate.
 
-    TASK 2:
+##  TASK 2: Gestionarea postarilor si repostarilor
 
     Avem o lista dublu inlantuita de arbori. Fiecare nod al listei `ll_node_t`
 este radacina unui arbore generic. Nodul reprezinta postarea in sine si 
@@ -93,7 +95,8 @@ arbore;
 - find_common_repost - gaseste prima repostare comuna pentru doua repostari date 
 dintr-un arbore;
 
-    TASK 3:
+##  TASK 3: Gestionarea feed-ului si a prietenilor apropiati
+
 
     Implementarea ultimului task implica gestionarea si afisarea feed-ului 
 utilizatorilor intr-o retea sociala, identificarea prietenilor care au repostat 
